@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
             transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput);
 
             speed = Mathf.Round(playerRb.velocity.magnitude * 3.6f); //2.237 for Mph
-            speedometerText.SetText("speed: " + speed + " km/h");
+            speedometerText.SetText("Speed: " + speed + " km/h");
 
             rpm = Mathf.Round((speed % 30) * 40);
             rpmText.SetText("RPM: " + rpm);
